@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Helvetica";
+  src: local("Helvetica"), url("../fonts/Helvetica.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: local("Helvetica-Bold"), url("../fonts/Helvetica-Bold.ttf") format("ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: local("Helvetica-Light"),
+    url("../fonts/Helvetica-Light.ttf") format("ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Interstate";
+  src: local("Interstate"), url("../fonts/Interstate.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Interstate";
+  src: local("Interstate-Bold"),
+    url("../fonts/Interstate-Bold.ttf") format("ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Interstate";
+  src: local("Interstate-Light"),
+    url("../fonts/Interstate-Light.ttf") format("ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Myriad";
+  src: local("Myriad") url("../fonts/Myriad.otf") format("otf");
+}
+
+:root {
+  --white: #000000;
+  --white: #ffffff;
+  --gray: #ebebeb;
+  --footer-gray: #707070;
+  --indicator-gray: #c6c6c6;
+  --blue-nav-one: #009bfa;
+  --blue-nav-two: #193989;
+  --blue-dark: #001254;
+
+  --card-one-blue: #1450d2;
+  --card-two-blue: #01a49c;
+  --card-three-blue: #009bfa;
+
+  --events-accent-blue: #3b4e96;
+  --events-main-blue: #1450d2;
+
+  --text-xxs: 0.65rem;
+  --text-xs: 0.8rem;
+  --text-sm: 1.4rem;
+  --text-lg: 2.3rem;
+  --text-xl: 2.5rem;
+
+  --margin-xs: 1rem;
+  --margin-sm: 2rem;
+}
+
+body {
+  margin: 0;
+  font-family: Interstate;
+}
+
+body * {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

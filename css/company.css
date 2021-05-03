@@ -1,0 +1,55 @@
+.company {
+  width: 100%;
+  height: 18.5rem;
+  background-image: url("../img/company.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.company .company-content {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-content h3 {
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 1.6rem;
+  color: var(--white);
+  letter-spacing: 0.1rem;
+}
+
+.company-content p {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--white);
+  line-height: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+.company-content button {
+  margin-top: 1.8rem;
+  padding: 0.6rem 1.8rem;
+  background: transparent;
+  border: 1px var(--white) solid;
+  border-radius: 0;
+  font-family: Helvetica;
+  font-size: var(--text-xs);
+  color: var(--white);
+}
+
+@media screen and (max-width: 900px) {
+  .company .company-content {
+    padding: 0 2rem;
+  }
+}

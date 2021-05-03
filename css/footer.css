@@ -1,0 +1,52 @@
+.footer {
+  width: 100%;
+  height: 4rem;
+  background-color: var(--footer-gray);
+  background-size: 100% 100%;
+}
+
+.footer .footer-content {
+  margin: 0 auto;
+  padding-top: 0.7rem;
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  font-family: Myriad, "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  font-size: var(--text-xxs);
+  color: var(--white);
+}
+
+.footer-content .contact {
+  width: 7rem;
+}
+
+.footer-content .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-content .socials {
+  margin-left: 0.3rem;
+}
+
+.footer-content .socials img {
+  margin: 0 0.2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    padding: 0 1rem;
+  }
+}

@@ -1,0 +1,191 @@
+.events {
+  width: 100%;
+  height: 24.5rem;
+  background-color: var(--gray);
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+.events .events-content {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+}
+
+.events-content .main-title {
+  padding-top: var(--margin-sm);
+  font-family: Helvetica;
+  font-weight: 300;
+  font-size: var(--text-sm);
+  color: var(--black);
+  letter-spacing: 0.05rem;
+}
+
+.events-content p {
+  font-family: Helvetica;
+  font-weight: 300;
+  font-size: var(--text-xxs);
+  color: var(--black);
+}
+
+.events .events-cards {
+  margin-top: 1.5rem;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.events .events-card {
+  position: relative;
+  margin-top: var(--margin-xs);
+  flex-shrink: 0;
+  padding: 1rem;
+  width: 18rem;
+  height: 14rem;
+  background-color: var(--events-main-blue);
+}
+
+.events .events-card::after {
+  position: absolute;
+  top: -9px;
+  left: 10px;
+  content: "";
+  border: 0.6rem solid transparent;
+  border-left-color: var(--events-accent-blue);
+  transform: rotate(45deg);
+}
+
+.events .events-card::before {
+  position: absolute;
+  bottom: -28.5px;
+  left: 28.5px;
+  content: "";
+  border: 1.7rem solid transparent;
+  border-left-color: var(--gray);
+  transform: rotate(45deg);
+}
+
+.events-card .events-date {
+  position: absolute;
+  top: -12.5px;
+  left: 19px;
+
+  padding: 0.9rem 1rem;
+  width: 4rem;
+  height: 3.7rem;
+  background-color: var(--blue-dark);
+}
+
+.events-card .events-date div:first-child {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--white);
+}
+
+.events-card .events-date div:last-child {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--white);
+  letter-spacing: 0.1rem;
+}
+
+.events-card .events-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.events-card .events-title {
+  margin-top: 2.8rem;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--white);
+  letter-spacing: 0.05rem;
+}
+
+.events-card .events-desc {
+  font-family: Helvetica;
+  font-weight: 300;
+  font-size: var(--text-xxs);
+  color: var(--white);
+}
+
+.events-card .events-button-first {
+  margin-top: 1.6rem;
+  padding: 0.7rem 1.2rem;
+  width: 9.5rem;
+  background: transparent;
+  border: 1px var(--white) solid;
+  border-radius: 0;
+  font-family: Interstate;
+  font-size: var(--text-xs);
+  color: var(--white);
+}
+
+.events-card .events-button {
+  margin-top: 0.8rem;
+  padding: 0.7rem 1.2rem;
+  width: 9.5rem;
+  background: transparent;
+  border: 1px var(--white) solid;
+  border-radius: 0;
+  font-family: Interstate;
+  font-size: var(--text-xs);
+  color: var(--white);
+}
+
+.events-card .events-desc::before {
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  content: "";
+  width: 14.6rem;
+  height: 2.5rem;
+  background-color: var(--gray);
+}
+
+.events-card .events-city {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  align-self: flex-end;
+  font-family: Interstate;
+  font-size: 1rem;
+  color: var(--black);
+}
+
+.carousel {
+  display: none;
+}
+
+.carousel-indicators {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-indicators .indicator {
+  margin: 0 0.15rem;
+  border: 1px var(--indicator-gray) solid;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.carousel-indicators .indicator:first-child {
+  background: var(--indicator-gray);
+}
+
+@media screen and (max-width: 900px) {
+  .events .events-content {
+    padding: 0 2rem;
+  }
+
+  .carousel {
+    display: block;
+  }
+}
